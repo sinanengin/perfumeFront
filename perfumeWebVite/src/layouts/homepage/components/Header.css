@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+}
+
+.banner {
+  width: 100vw;
+  height: 65vh;
+  background-image: url("https://www.norex.in/uploads/blocks/block_6384aec20fd8a5-34922782-88184771.png");
+  background-size: cover;
+  background-position: 69%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.banner-text {
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+.banner-text h2 {
+  margin-left: 13px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.banner-text h1 {
+  margin-left: 10px;
+  font-size: 100px;
+}
+
+#btn {
+  width: 20rem;
+  height: 4rem;
+  font-weight: bold;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}

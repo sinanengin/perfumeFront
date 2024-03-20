@@ -1,17 +1,13 @@
 import "./Homepage.css";
+import { Carousel } from "./components/Carousel";
+import { Header } from "./components/Header";
 
 export const Homepage = () => {
   return (
     <div>
-      <div className="container">
-        <div className="banner">
-          <div className="banner-text">
-            <h2>İLKBAHAR FIRSATI</h2>
-            <h1>İNDİRİM</h1>
-            <button id="btn">Şimdi Yararlan</button>
-          </div>
-        </div>
-      </div>
+      <Header />
+      <Carousel />
+      <div className="container"></div>
     </div>
   );
 };

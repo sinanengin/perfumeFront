@@ -1,4 +1,4 @@
-export default class productModel {
+export default class ProductModel {
   constructor(
     public productId: number,
     public productName: string,

@@ -14,7 +14,7 @@ export const Navbar = () => {
 
         <nav className="navbar">
           <a href="#">Ana Sayfa</a>
-          <a href="#">Ürünler</a>
+          <a href="/urunler">Ürünler</a>
           <a href="#">Kategoriler</a>
           <a href="#">En Çok Satan</a>
           <a href="#">İletişim</a>
