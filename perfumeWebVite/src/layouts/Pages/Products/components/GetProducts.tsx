@@ -1,6 +1,6 @@
-import ProductModel from "../../../Models/ProductModel";
+import ProductModel from "../../../../Models/ProductModel";
 
-const RecommendedPerfume: React.FC<{ product: ProductModel }> = (props) => {
+const GetProducts: React.FC<{ product: ProductModel }> = (props) => {
   return (
     <div className="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3">
       <div className="text-center">
@@ -14,4 +14,4 @@ const RecommendedPerfume: React.FC<{ product: ProductModel }> = (props) => {
   );
 };
 
-export default RecommendedPerfume;
+export default GetProducts;

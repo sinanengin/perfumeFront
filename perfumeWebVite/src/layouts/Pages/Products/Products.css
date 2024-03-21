@@ -1,10 +1,10 @@
 section {
-  padding: 100px 28%;
+  padding: 10px 15%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(288px, auto));
   align-items: center;
   gap: 3rem;
   text-align: center;
