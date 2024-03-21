@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProductDetail.css";
-import { Link } from "react-router-dom";
 
 export const ProductDetail = () => {
   return (
