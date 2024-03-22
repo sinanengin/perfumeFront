@@ -6,6 +6,7 @@ export default class ProductModel {
     public productPrice: string,
     public productStockAmount: string,
     public imageUrl: string,
-    public productIsBestSeller: boolean
+    public productIsBestSeller: boolean,
+    public productBrandName: string
   ) {}
 }

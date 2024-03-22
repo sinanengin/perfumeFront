@@ -1,11 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from "axios";
 
 export const ProductService = {
   getAll: async (
-    volumeId: number,
-    brandId: number,
-    categoryId: number,
-    genderId: number
+    volumeId: any,
+    brandId: any,
+    categoryId: any,
+    genderId: any,
+    pageSize: number,
+    pageNo: number
   ) => {
     let baseurl: string = `http://localhost:8080/api/products?`;
     if (volumeId) {
@@ -21,7 +24,9 @@ export const ProductService = {
       baseurl = baseurl + `genderId=${genderId}`;
     }
     try {
-      const response = await axios.get(baseurl);
+      const response = await axios.get(
+        baseurl + `?pageSize=${pageSize}&pageNo=${pageNo}`
+      );
       return response.data;
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -33,6 +38,24 @@ export const ProductService = {
     try {
       const baseurl = "http://localhost:8080/api/products/bestseller";
       const response = await axios.get(baseurl);
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching products:", error);
+      return [];
+    }
+  },
+
+  getByNameContainsKeyword: async (
+    keyword: any,
+    pageSize: number,
+    pageNo: number
+  ) => {
+    const baseurl: string = `http://localhost:8080/api/products/search/${keyword}`;
+
+    try {
+      const response = await axios.get(
+        baseurl + `?pageSize=${pageSize}&pageNo=${pageNo}`
+      );
       return response.data;
     } catch (error) {
       console.error("Error fetching products:", error);

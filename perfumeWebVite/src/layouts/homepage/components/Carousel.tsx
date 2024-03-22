@@ -9,7 +9,7 @@ export const Carousel = () => {
   useEffect(() => {
     const getPerfume = async () => {
       const response = await ProductService.getByProductIsBestSeller();
-      const perfumes: ProductModel[] = response.data.map(
+      const perfumes: ProductModel[] = response.data.content.map(
         (item: ProductModel) => ({
           productId: item.productId,
           productName: item.productName,
