@@ -9,6 +9,7 @@ export const Homepage = () => {
       <Header />
       <Carousel />
       <GenderSelect />
+
       <div className="container"></div>
     </div>
   );

@@ -21,11 +21,11 @@ export const ProductService = {
       baseurl = baseurl + `categoryId=${categoryId}&`;
     }
     if (genderId) {
-      baseurl = baseurl + `genderId=${genderId}`;
+      baseurl = baseurl + `genderId=${genderId}&`;
     }
     try {
       const response = await axios.get(
-        baseurl + `?pageSize=${pageSize}&pageNo=${pageNo}`
+        baseurl + `pageSize=${pageSize}&pageNo=${pageNo}`
       );
       return response.data;
     } catch (error) {

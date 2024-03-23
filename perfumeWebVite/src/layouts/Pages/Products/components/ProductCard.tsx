@@ -4,16 +4,21 @@ import "../Products.css";
 
 export const ProductCard: React.FC<{ product: ProductModel }> = (props) => {
   return (
-    <div>
-      <div className="box">
-        <img src={props.product.imageUrl} alt="Ürün Fotoğrafı" />
-        <h4>{props.product.productBrandName}</h4>
-        <h4>{props.product.productName}</h4>
-        <h5>{props.product.productPrice}</h5>
-        <div className="cart">
-          <a href="#">
-            <i className="bx bx-cart"></i>
-          </a>
+    <div className="col-md-4 box ">
+      <div className="card card-width">
+        <a href={`/products/${props.product.productId}`}>
+          <img
+            className="card-img-top"
+            src={props.product.imageUrl}
+            alt="Card image cap"
+          />
+        </a>
+        <div className="card-body">
+          <p>{props.product.productName}</p>
+          <p className="card-text text-muted">
+            {props.product.productDescription}
+          </p>
+          <p className="card-text roboto-bold">{props.product.productPrice}</p>
         </div>
       </div>
     </div>

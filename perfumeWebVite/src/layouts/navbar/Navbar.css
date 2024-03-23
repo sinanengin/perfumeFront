@@ -48,7 +48,7 @@ body {
   color: rgb(0, 0, 0);
   font-weight: 500;
   text-decoration: none;
-  margin-left: 40px;
+  margin: 0px 20px;
   overflow: hidden;
 }
 
@@ -65,4 +65,20 @@ body {
 
 .navbar a:hover::before {
   width: 100%;
+}
+.navbar form {
+  text-decoration: none;
+  margin: 0px 20px;
+  overflow: hidden;
+}
+.navbar form input {
+  font-size: 14px;
+  font-weight: 400;
+  border: solid 1px rgb(0, 0, 0);
+  width: 400px;
+  border-radius: 5px;
+}
+.navbar form button {
+  margin-left: 5px;
+  border: none;
 }
